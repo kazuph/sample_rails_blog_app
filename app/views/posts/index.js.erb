@@ -1,3 +1,1 @@
-$('#posts').update(
-  '<%= escape_javascript(render @posts) %>'
-);
+$('#posts').replaceWith('<tbody id="posts"><%= escape_javascript(render(@posts)) %></tbody>');
